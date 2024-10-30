@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandenController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('landen', LandenController::class);
